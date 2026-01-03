@@ -1,0 +1,205 @@
+/* ------------------------ GENERAL ------------------------ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* BUTTONS */
+button, .btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------ WELCOME PAGE ------------------------ */
+.welcome-bg {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1532619187606-4df54e55e914") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 50px;
+  border-radius: 20px;
+  color: white;
+}
+
+.welcome-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px yellow;
+}
+
+.welcome-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.welcome-quote {
+  font-style: italic;
+  color: #ffeb3b;
+  margin-bottom: 25px;
+}
+
+/* ------------------------ LOGIN PAGE ------------------------ */
+.login-bg {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* ------------------------ INSTRUCTIONS PAGE ------------------------ */
+.instructions-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: left;
+  line-height: 1.5em;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.instructions-box ul li {
+  margin-bottom: 8px;
+}
+
+.bg {
+  height: 100vh;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------ QUIZ PAGE ------------------------ */
+.quiz-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  text-align: center;
+  width: 80%;
+  max-width: 700px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.quiz-container h2 {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.options button {
+  width: 60%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.options button:hover {
+  transform: scale(1.05);
+}
+
+/* Multi-color options */
+.options button:nth-child(1){background:#ff7675;}
+.options button:nth-child(2){background:#74b9ff;}
+.options button:nth-child(3){background:#55efc4; color:black;}
+.options button:nth-child(4){background:#ffeaa7; color:black;}
+
+/* Progress text */
+#progress {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ------------------------ RESULTS PAGE ------------------------ */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  text-align: center;
+  color: white;
+  font-family: Arial,sans-serif;
+}
+
+.result-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Correct/Wrong labels */
+.correct-label {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.wrong-label {
+  color: #e74c3c;
+  font-weight: bold;
+}
